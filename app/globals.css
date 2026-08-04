@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Background Colors */
+  --color-background: #fafafa;
+  --color-surface: #ffffff;
+  --color-background-hover: #F5F5F5;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Text Colors */
+  --color-foreground: #171717;
+  --color-muted-foreground: #6b7280;
+  --color-inverse-foreground: #ffffff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Brand Colors */
+  --color-primary: #059669;
+  --color-primary-hover: #047857;
+
+  /* Border Colors */
+  --color-border: #e5e7eb;
+  --color-glow-border: #34D399;
+
+  /* Semantic Colors */
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+
+  /* Font Families */
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+
+  /* Shadows */
+  --shadow-soft:
+    0 12px 35px rgba(15,23,42,.08);
+
+  --shadow-emerald:
+    0 12px 35px rgba(15,23,42,.08),
+    0 0 30px rgba(16,185,129,.18);
+
+  /* Animations */
+  --animation-glow: glow 1.5s ease-in-out infinite alternate;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  font-family: var(--font-body);
 }
