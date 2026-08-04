@@ -1,14 +1,11 @@
-import { Button } from '../ui';
-import Link from 'next/link';
-import { ArrowUpRight, Download } from 'lucide-react';
-
+import HeroCta from './HeroCta';
 
 export default function HeroText() {
   return (
-    <div>
+    <>
       <div className="w-50 mb-4 flex items-center justify-center gap-2 shadow-emerald rounded-full p-2">
         <span className="w-2 h-2 bg-primary rounded-full"></span>
-        <p>
+        <p className='text-sm'>
           Abdulganiy Ibrahim
         </p>
       </div>
@@ -18,26 +15,15 @@ export default function HeroText() {
           Building scalable web applications with clean code and & <span className="text-primary">great user experiences</span>
         </h1>
         <p className="mt-4 text-sm text-gray-600">
-          I buid fast, responsive, and user-friendly web applications that meet your business needs. I specialize in React, Next.js, and Node.js, and I am passionate about creating high-quality software that solves real-world problems.
+          I don't enjoy building software just because it works. I enjoy understanding why it works.
+          Every project I build is an opportunity to learn something deeper, whether that's backend architecture, databases, APIs, or creating interfaces that feel thoughtful and polished. I'm constantly refining not only my code, but also the way I think about building software.
         </p>
       </div>
 
-      <div className='flex items-center gap-6'>
-        <Link
-          href='#contact'
-          className='inline-flex items-center gap-4 bg-primary shadow-emerald text-white rounded-2xl py-2 px-4 hover:bg-primary-hover'
-        >
-          View my work
-          <ArrowUpRight className='h-4 w-4' />
-        </Link>
-
-        <Button
-          className='inline-flex items-center gap-4 shadow-soft rounded-2xl py-2 px-4 hover:bg-background-hover hover:shadow-emerald'
-        >
-          Download CV
-          <Download className='h-4 w-4' />
-        </Button>
+      <div className='mt-6'>
+        <HeroCta />
       </div>
-    </div>
+      
+    </>
   )
 }

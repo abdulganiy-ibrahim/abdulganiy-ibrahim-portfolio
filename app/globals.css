@@ -8,7 +8,7 @@
 
   /* Text Colors */
   --color-foreground: #171717;
-  --color-muted-foreground: #6b7280;
+  --color-muted-foreground: #4b5563;
   --color-inverse-foreground: #ffffff;
 
   /* Brand Colors */
@@ -36,8 +36,13 @@
     0 12px 35px rgba(15,23,42,.08),
     0 0 30px rgba(16,185,129,.18);
 
+  --shadow-card:
+  0 12px 35px rgba(15, 23, 42, 0.08),
+  0 0 40px rgba(16, 185, 129, 0.35),
+  0 0 80px rgba(16, 185, 129, 0.18);
+
   /* Animations */
-  --animation-glow: glow 1.5s ease-in-out infinite alternate;
+  --animation-glow: glow 3s ease-in-out infinite alternate;
 }
 
 body {

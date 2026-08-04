@@ -31,7 +31,7 @@ export default function MenuButton() {
               onClick={toggleMenu}
             />
 
-            <aside className='fixed overflow-y-auto bg-background flex flex-col top-0 right-0 min-h-screen w-64 z-50 shadow-soft rounded-l-lg p-4'>
+            <aside className='fixed overflow-y-auto bg-background flex flex-col top-0 right-0 min-h-screen w-64 md:w-80 z-50 shadow-soft rounded-l-lg p-4'>
               <div className="flex items-center space-x-2 mb-8">
                 <BrandLogo />
                 <BrandName />

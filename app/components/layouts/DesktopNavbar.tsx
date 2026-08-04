@@ -5,7 +5,7 @@ import { MessageCircleMore } from "lucide-react";
 
 export default function DesktopNavbar() {
   return (
-    <div className="hidden md:flex items-center justify-between w-full space-x-10 px-4 py-6 bg-background shadow-soft rounded-full">
+    <div className="hidden lg:flex items-center justify-between w-full space-x-10 px-4 py-6 bg-background shadow-soft rounded-full">
       <div className="flex items-center space-x-2">
         <BrandLogo />
         <BrandName />
