@@ -15,8 +15,7 @@ export default function HeroText() {
           Building scalable web applications with clean code and & <span className="text-primary">great user experiences</span>
         </h1>
         <p className="mt-4 text-sm text-gray-600">
-          I don't enjoy building software just because it works. I enjoy understanding why it works.
-          Every project I build is an opportunity to learn something deeper, whether that's backend architecture, databases, APIs, or creating interfaces that feel thoughtful and polished. I'm constantly refining not only my code, but also the way I think about building software.
+          I don't build software just to make it work. I build to understand why it works. Every project deepens my understanding of architecture, APIs, databases, and thoughtful user experiences.
         </p>
       </div>
 

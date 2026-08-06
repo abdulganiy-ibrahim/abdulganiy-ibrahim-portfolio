@@ -2,7 +2,7 @@ import AboutCard from "./AboutCard";
 
 export default function AboutText() {
   return (
-    <div>
+    <>
       <p className="text-sm text-primary font-semibold">About me</p>
 
       <div className="space-y-4 mt-2">
@@ -13,10 +13,10 @@ export default function AboutText() {
         </p>
       </div>
 
-      <div className="mt-4 flex items-cemter gap-4">
+      <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-2">
         <AboutCard />
       </div>
     
-    </div>
+    </>
   )
 }

@@ -7,7 +7,7 @@ export default function AboutCard() {
         cardText.map((text) => (
           <div
             key={text.title}
-            className="w-50 rounded-2xl shadow-emerald p-4"
+            className="rounded-2xl shadow-emerald p-4"
           >
             <text.icon className="w-6 h-6 text-primary" />
 

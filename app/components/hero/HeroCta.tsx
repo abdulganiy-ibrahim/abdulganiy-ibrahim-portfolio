@@ -4,7 +4,7 @@ import { ArrowUpRight, Download } from 'lucide-react';
 
 export default function HeroCta() {
   return (
-    <div className='flex items-center gap-6'>
+    <div className='flex items-center gap-2'>
       <Link
         href='#contact'
         className='inline-flex items-center gap-4 bg-primary shadow-emerald text-white rounded-2xl py-2 px-4 hover:bg-primary-hover'

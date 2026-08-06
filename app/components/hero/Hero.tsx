@@ -5,14 +5,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full mt-20 flex flex-col items-start justify-center lg:flex-row lg:justify-between gap-20 p-10"
+      className="mt-10 p-2 flex flex-col lg:flex-row items-start justify-between gap-10"
     >
-      <div className="w-150">
+      <div className="lg:basis-3/5">
         <HeroText />
       </div>
 
-
-      <div className="mt-5 w-130">
+      <div className="lg:basis-2/5 flex justify-center md:mx-auto">
         <HeroImage />
       </div>
       

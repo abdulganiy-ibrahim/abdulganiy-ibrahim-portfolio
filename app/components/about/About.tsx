@@ -5,13 +5,13 @@ export default function About() {
   return (
     <section
       id="about" 
-      className="mt-10 flex flex-col items-start justify-center lg:flex-row lg:justify-between lg:p-10"
+      className="mt-10 p-2 flex flex-col lg:flex-row justify-between gap-10"
     >
-      <div className="hidden lg:block w-110">
+      <div className="hidden lg:flex lg:basis-2/5">
         <AboutImage />
       </div>
 
-      <div className="w-150">
+      <div className="lg:basis-3/5">
         <AboutText />
       </div>
       

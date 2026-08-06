@@ -2,13 +2,9 @@ import { DesktopNavbar, MobileNavbar} from './index';
 
 export default function Header() {
   return (
-    <header>
-      <div className='lg:hidden'>
-        <MobileNavbar />
-      </div>
-
+    <div className='w-full'>
+      <MobileNavbar />
       <DesktopNavbar />
-    
-    </header>
+    </div>
   );
 }

@@ -65,7 +65,7 @@ export default function HeroImage() {
         <p>{"};"}</p>
       </div>
 
-      <div className='absolute bottom-40 right-10 w-12 h-12 flex items-center justify-center bg-background-hover rounded-lg border border-background-hover shadow-soft'>
+      <div className='hidden absolute bottom-40 right-5 w-12 h-12 md:flex items-center justify-center bg-background-hover rounded-lg border border-background-hover shadow-soft'>
         <Monitor className='w-8 h-8 bg-background-hover text-primary'/>
       </div>
       
