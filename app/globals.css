@@ -2,9 +2,10 @@
 
 @theme {
   /* Background Colors */
-  --color-background: #fafafa;
+  --color-background: #f9fafb;
   --color-surface: #ffffff;
   --color-background-hover: #F5F5F5;
+  --color-background-card: #f3f4f6;
 
   /* Text Colors */
   --color-foreground: #171717;

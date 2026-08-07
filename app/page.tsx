@@ -1,6 +1,8 @@
 import { Header } from './components/layouts';
 import { Hero } from './components/hero';
 import { About } from './components/about';
+import { Journey } from './components/journey';
+import { Technologies } from './components/technologies';
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
 
       <Hero />
       <About />
+      <Journey />
+      <Technologies />
     </div>
   );
 }

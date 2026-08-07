@@ -1,5 +1,12 @@
-import { NavLink, AboutCardText } from '@/app/types';
-import { Brain, Blocks, ScanSearch, BookOpen} from "lucide-react";
+import { 
+  NavLink, AboutCardText, JourneyCard, Technology 
+} from '@/types';
+import {
+  Brain, Blocks, ScanSearch, BookOpen, CodeXml, Globe
+} from "lucide-react";
+import {
+  SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss, SiNodedotjs, SiExpress, SiGit, SiGithub, SiPostman, SiVercel
+} from 'react-icons/si';
 
 export const navLinks: NavLink[] = [
   {href: '#home', label: 'Home'},
@@ -27,5 +34,42 @@ export const aboutCardText: AboutCardText[] = [
     icon: BookOpen,
     title: 'Keep growing',
     desc: 'Learning never stop'
+  }
+]
+
+export const journeyCardText: JourneyCard[] = [
+  {icon: CodeXml, year: 2024, desc: 'Started learning html & css'},
+  {icon: Globe, year: 2025, desc: 'built my first responsive website'}
+]
+
+export const skills: Technology[] = [
+  {
+    icon: SiHtml5, name: 'HTML5', color: "#E34F26"
+  }, {
+    icon: SiCss, name: 'CSS3', color: "#1572B6"
+  }, {
+    icon: SiJavascript, name: 'JavaScript', color: "#F7DF1E"
+  }, {
+    icon: SiTypescript, name: 'TypeScript', color: '#3178C6'
+  }, {
+    icon: SiReact, name: 'React.js', color: "#61DAFB"
+  }, {
+    icon: SiTailwindcss, name: 'TailwindCSS', color: '#06B6D4'
+  }, {
+    icon: SiNextdotjs, name: 'Next.js', color: "#000000"
+  }, {
+    icon: SiNodedotjs, name: 'NodeJS', color: '#5FA04E'
+  }, {
+    icon: SiExpress, name: 'Express.js', color: '#0A0A0A'
+  }, {
+    icon: SiPostgresql, name: 'PostgreSQL', color: '#4169E1'
+  }, {
+    icon: SiGit, name: 'Git', color: '#F03C2E'
+  }, {
+    icon: SiGithub, name: 'Github', color: '#181717'
+  }, {
+    icon: SiPostman, name: 'Postman', color: '#FF6C37'
+  }, {
+    icon: SiVercel, name: 'Vercel', color: '#000000'
   }
 ]
