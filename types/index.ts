@@ -25,5 +25,11 @@ export interface Technology {
 }
 
 export interface Project {
-  
+  image: string;
+  name: string;
+  desc: string;
+  technology: string[];
+  demoUrl: string;
+  githubUrl: string;
+  status: 'private' | 'public' | 'ongoing';
 }

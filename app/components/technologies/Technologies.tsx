@@ -2,7 +2,7 @@ import TechnologyCard from "./TecnologyCard"
 
 export default function Technologies() {
   return (
-    <section>
+    <section className="mt-10">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-sm text-primary font-semibold">Skill & Technologies</h1>
         <p className="text-base font-semibold">Technogies I work with</p>

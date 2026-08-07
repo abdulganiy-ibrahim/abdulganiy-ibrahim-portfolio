@@ -1,12 +1,14 @@
 import { 
-  NavLink, AboutCardText, JourneyCard, Technology 
+  NavLink, AboutCardText, JourneyCard, Technology, 
+  Project
 } from '@/types';
 import {
   Brain, Blocks, ScanSearch, BookOpen, CodeXml, Globe
 } from "lucide-react";
 import {
-  SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss, SiNodedotjs, SiExpress, SiGit, SiGithub, SiPostman, SiVercel
+  SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss, SiNodedotjs, SiExpress, SiGit, SiGithub, SiPostman, SiVercel, SiSupabase
 } from 'react-icons/si';
+
 
 export const navLinks: NavLink[] = [
   {href: '#home', label: 'Home'},
@@ -64,6 +66,8 @@ export const skills: Technology[] = [
   }, {
     icon: SiPostgresql, name: 'PostgreSQL', color: '#4169E1'
   }, {
+    icon: SiSupabase, name: 'Supabase', color: '#3ECF8E'
+  }, {
     icon: SiGit, name: 'Git', color: '#F03C2E'
   }, {
     icon: SiGithub, name: 'Github', color: '#181717'
@@ -71,5 +75,19 @@ export const skills: Technology[] = [
     icon: SiPostman, name: 'Postman', color: '#FF6C37'
   }, {
     icon: SiVercel, name: 'Vercel', color: '#000000'
+  }
+]
+
+export const projects: Project[] = [
+  {
+    image: '/projectImages/sellora-dashboard.png', 
+    name: 'Sellora', 
+    desc: 'A full-stack e-commerce platform that enables businesses to manage products, inventory, orders, and analytics through a modern, intuitive dashboard.', 
+    technology: [
+      'React', 'NextJS', 'TailwindCSS', 'Supabase'
+    ],
+    demoUrl: 'https://sellora-project-pi.vercel.app',
+    githubUrl: 'https://github.com/abdulganiy-ibrahim',
+    status: 'private'
   }
 ]
