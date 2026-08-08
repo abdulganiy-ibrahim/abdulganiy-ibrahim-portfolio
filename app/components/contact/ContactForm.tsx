@@ -3,23 +3,12 @@
 import { useState } from "react";
 import type { FormEvent, ChangeEvent } from "react";
 import { Send } from "lucide-react";
+import { ContactFormValues, FormErrors } from "@/types";
 
-interface ContactFormValues {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+
 
 interface ContactFormProps {
   onSubmit?: (values: ContactFormValues) => void | Promise<void>;
-}
-
-interface FormErrors {
-  name?: string;
-  email?: string;
-  subject?: string;
-  message?: string;
 }
 
 const emptyValues: ContactFormValues = {

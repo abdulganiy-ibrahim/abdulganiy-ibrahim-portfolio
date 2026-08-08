@@ -41,3 +41,16 @@ export interface SocialLink {
   label: string;
   color?: string;
 }
+
+export interface ContactFormValues {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+export interface FormErrors {
+  name?: string;
+  email?: string;
+  subject?: string;
+  message?: string;
+}
