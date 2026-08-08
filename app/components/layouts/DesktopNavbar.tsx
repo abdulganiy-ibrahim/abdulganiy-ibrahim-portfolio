@@ -1,6 +1,6 @@
 import { BrandLogo, BrandName } from '../brand';
 import NavLink from './NavLink';
-import { Button } from '../ui';
+import Link from 'next/link';
 import { MessageCircleMore } from "lucide-react";
 
 export default function DesktopNavbar() {
@@ -16,12 +16,13 @@ export default function DesktopNavbar() {
       </div>
 
       <div>
-        <Button
-          className="flex items-center gap-2 rounded-full font-semibold shadow-emerald hover:shadow-card transition-all duration-300"
+        <Link
+          href='#contact'
+          className="flex items-center gap-2 py-2 px-4 rounded-full font-semibold shadow-emerald hover:shadow-card transition-all duration-300"
         >
           Let's talk
           <MessageCircleMore className="h-4 w-4" />
-        </Button>
+        </Link>
       </div>
     </div>
   )
