@@ -1,20 +1,20 @@
 import { 
-  NavLink, AboutCardText, JourneyCard, Technology, 
-  Project
+  NavLink, AboutCardText, JourneyCard, Technology, Project, SocialLink
 } from '@/types';
 import {
-  Brain, Blocks, ScanSearch, BookOpen, CodeXml, Globe
+  Brain, Blocks, ScanSearch, BookOpen, CodeXml, Globe, Mail
 } from "lucide-react";
 import {
   SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss, SiNodedotjs, SiExpress, SiGit, SiGithub, SiPostman, SiVercel, SiSupabase
 } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa';
 
 
 export const navLinks: NavLink[] = [
   {href: '#home', label: 'Home'},
   {href: '#about', label: 'About'},
   {href: '#journey', label: 'Journey'},
-  {href: '#skills', label: 'Skills'},
+  {href: '#technologies', label: 'Skills'},
   {href: '#projects', label: 'Projects'},
   {href: '#contact', label: 'Contact'},
 ]
@@ -46,35 +46,35 @@ export const journeyCardText: JourneyCard[] = [
 
 export const skills: Technology[] = [
   {
-    icon: SiHtml5, name: 'HTML5', color: "#E34F26"
+    icon: SiHtml5, name: 'HTML5', color: "#E34F26", category: 'frontend'
   }, {
-    icon: SiCss, name: 'CSS3', color: "#1572B6"
+    icon: SiCss, name: 'CSS3', color: "#1572B6", category: 'frontend'
   }, {
-    icon: SiJavascript, name: 'JavaScript', color: "#F7DF1E"
+    icon: SiJavascript, name: 'JavaScript', color: "#F7DF1E", category: 'frontend'
   }, {
-    icon: SiTypescript, name: 'TypeScript', color: '#3178C6'
+    icon: SiTypescript, name: 'TypeScript', color: '#3178C6', category: 'frontend'
   }, {
-    icon: SiReact, name: 'React.js', color: "#61DAFB"
+    icon: SiReact, name: 'React.js', color: "#61DAFB", category: 'frontend'
   }, {
-    icon: SiTailwindcss, name: 'TailwindCSS', color: '#06B6D4'
+    icon: SiTailwindcss, name: 'TailwindCSS', color: '#06B6D4', category: 'frontend'
   }, {
-    icon: SiNextdotjs, name: 'Next.js', color: "#000000"
+    icon: SiNextdotjs, name: 'Next.js', color: "#000000", category: 'frontend'
   }, {
-    icon: SiNodedotjs, name: 'NodeJS', color: '#5FA04E'
+    icon: SiNodedotjs, name: 'NodeJS', color: '#5FA04E', category: 'backend'
   }, {
-    icon: SiExpress, name: 'Express.js', color: '#0A0A0A'
+    icon: SiExpress, name: 'Express.js', color: '#0A0A0A', category: 'backend'
   }, {
-    icon: SiPostgresql, name: 'PostgreSQL', color: '#4169E1'
+    icon: SiPostgresql, name: 'PostgreSQL', color: '#4169E1', category: 'backend'
   }, {
-    icon: SiSupabase, name: 'Supabase', color: '#3ECF8E'
+    icon: SiSupabase, name: 'Supabase', color: '#3ECF8E', category: 'backend'
   }, {
-    icon: SiGit, name: 'Git', color: '#F03C2E'
+    icon: SiGit, name: 'Git', color: '#F03C2E', category: 'tool'
   }, {
-    icon: SiGithub, name: 'Github', color: '#181717'
+    icon: SiGithub, name: 'Github', color: '#181717', category: 'tool'
   }, {
-    icon: SiPostman, name: 'Postman', color: '#FF6C37'
+    icon: SiPostman, name: 'Postman', color: '#FF6C37', category: 'tool'
   }, {
-    icon: SiVercel, name: 'Vercel', color: '#000000'
+    icon: SiVercel, name: 'Vercel', color: '#000000', category: 'tool'
   }
 ]
 
@@ -86,8 +86,14 @@ export const projects: Project[] = [
     technology: [
       'React', 'NextJS', 'TailwindCSS', 'Supabase'
     ],
-    demoUrl: 'https://sellora-project-pi.vercel.app',
+    LiveUrl: 'https://sellora-project-pi.vercel.app',
     githubUrl: 'https://github.com/abdulganiy-ibrahim',
     status: 'private'
   }
 ]
+
+export const socialLinks: SocialLink[] = [
+  { icon: SiGithub, href: "https://github.com/abdulganiy-ibrahim", label: "GitHub", color: "181717" },
+  { icon: FaLinkedin, href: "https://linkedin.com/in/abdulganiy-ibrahim-04339840a", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:abdulganiyibrahim.dev@gmail.com", label: "Email" },
+];

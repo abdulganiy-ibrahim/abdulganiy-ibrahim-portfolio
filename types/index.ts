@@ -21,6 +21,7 @@ export interface JourneyCard {
 export interface Technology {
   icon: IconType;
   name: string;
+  category: string;
   color: string;
 }
 
@@ -29,7 +30,14 @@ export interface Project {
   name: string;
   desc: string;
   technology: string[];
-  demoUrl: string;
+  LiveUrl: string;
   githubUrl: string;
   status: 'private' | 'public' | 'ongoing';
+}
+
+export interface SocialLink {
+  icon: IconType;
+  href: string;
+  label: string;
+  color?: string;
 }

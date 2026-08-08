@@ -6,15 +6,15 @@ export default function HeroCta() {
   return (
     <div className='flex items-center gap-2'>
       <Link
-        href='#contact'
-        className='inline-flex items-center gap-4 bg-primary shadow-emerald text-white rounded-2xl py-2 px-4 hover:bg-primary-hover'
+        href='#projects'
+        className='inline-flex items-center gap-4 bg-primary border border-primary text-white rounded-2xl py-2 px-3 hover:bg-background hover:text-primary transition-all duration-300'
       >
         View my work
         <ArrowUpRight className='h-4 w-4' />
       </Link>
 
       <Button
-        className='inline-flex items-center gap-4 shadow-soft rounded-2xl py-2 px-4 hover:bg-background-hover hover:shadow-emerald'
+        className='inline-flex items-center gap-4 bg-background text-primary border border-primary rounded-2xl py-2 px-3 hover:bg-primary hover:text-white hover:shadow-emerald transition-all duration-300'
       >
         Download CV
         <Download className='h-4 w-4' />

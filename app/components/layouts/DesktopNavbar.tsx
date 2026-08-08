@@ -17,7 +17,7 @@ export default function DesktopNavbar() {
 
       <div>
         <Button
-          className="flex items-center gap-2 rounded-full font-semibold transition-all duration-300"
+          className="flex items-center gap-2 rounded-full font-semibold shadow-emerald hover:shadow-card transition-all duration-300"
         >
           Let's talk
           <MessageCircleMore className="h-4 w-4" />

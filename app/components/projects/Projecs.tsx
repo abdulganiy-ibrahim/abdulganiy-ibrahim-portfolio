@@ -2,7 +2,10 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="mt-10">
+    <section
+      id="projects" 
+      className="mt-10"
+    >
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-sm text-primary font-semibold">Featured Projects</h1>
         <p className="text-base font-semibold">Things I've built</p>

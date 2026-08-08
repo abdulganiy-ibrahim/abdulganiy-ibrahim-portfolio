@@ -4,6 +4,8 @@ import { About } from './components/about';
 import { Journey } from './components/journey';
 import { Technologies } from './components/technologies';
 import { Projects } from './components/projects';
+import { Contact } from './components/contact';
+import { Footer } from './components/footer';
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Journey />
       <Technologies />
       <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
