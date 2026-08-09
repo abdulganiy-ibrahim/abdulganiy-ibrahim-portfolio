@@ -6,6 +6,7 @@ import { Technologies } from './components/technologies';
 import { Projects } from './components/projects';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
+import { BrandLogoSvg } from './components/ui';
 
 export default function Home() {
   return (

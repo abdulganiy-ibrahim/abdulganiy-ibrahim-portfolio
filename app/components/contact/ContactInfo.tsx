@@ -8,7 +8,7 @@ type ContactDetail = {
 
 const details: ContactDetail[] = [
   { icon: Mail, label: "abdulganiyibrahim.dev@gmail.com", href: "mailto:abdulganiyibrahim.dev@gmail.com" },
-  { icon: Phone, label: "+234 806 99 3682", href: "tel:+2348061234567" },
+  { icon: Phone, label: "+234 816 992 3682", href: "tel:+2348169923682" },
 ];
 
 export default function ContactInfo() {
