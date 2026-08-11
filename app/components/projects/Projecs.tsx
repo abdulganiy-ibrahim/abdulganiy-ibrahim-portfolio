@@ -37,7 +37,7 @@ export default function Projects() {
         <p className="text-base font-semibold">Things I've built</p>
       </motion.div>
 
-      <motion.div variants={item} className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div variants={item} className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         <ProjectCard />
       </motion.div>
     </motion.section>

@@ -37,7 +37,7 @@ export default function Journey() {
         <p className="text-base font-semibold">My path as a developer</p>
       </motion.div>
 
-      <motion.div variants={item} className="mt-5 flex flex-col items-center justify-center">
+      <motion.div variants={item} className="mt-5 flex w-full flex-col items-center justify-center">
         <JourneyCard />
       </motion.div>
 

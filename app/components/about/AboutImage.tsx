@@ -7,7 +7,7 @@ export default function AboutImage() {
         src={codingImage}
         alt='coding image'
         priority
-        className='w-100 h-70 object-fit rounded-2xl shadow-card'
+        className='w-100 h-100 object-fit rounded-2xl shadow-card'
       />
   )
 }

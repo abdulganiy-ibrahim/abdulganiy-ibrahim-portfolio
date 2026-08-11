@@ -2,7 +2,7 @@ import {
   NavLink, AboutCardText, JourneyCard, Technology, Project, SocialLink
 } from '@/types';
 import {
-  Brain, Blocks, ScanSearch, BookOpen, CodeXml, Globe, Mail
+  Brain, Blocks, ScanSearch, BookOpen, CodeXml, Globe, Mail, Smartphone, Atom, Palette, Layers, Store, Server
 } from "lucide-react";
 import {
   SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss, SiNodedotjs, SiExpress, SiGit, SiGithub, SiPostman, SiVercel, SiSupabase
@@ -40,9 +40,47 @@ export const aboutCardText: AboutCardText[] = [
 ]
 
 export const journeyCardText: JourneyCard[] = [
-  {icon: CodeXml, year: 2024, desc: 'Started learning html & css'},
-  {icon: Globe, year: 2025, desc: 'built my first responsive website'}
-]
+  {
+    icon: CodeXml,
+    year: 2024,
+    desc: 'Started learning HTML & CSS and built small layouts and book covers.',
+  },
+  {
+    icon: Globe,
+    year: 2025,
+    desc: 'Completed HTML & CSS and started learning JavaScript.',
+  },
+  {
+    icon: Smartphone,
+    year: 2025,
+    desc: 'Built my first real project, a phone store with search, cart, and WhatsApp ordering.',
+  },
+  {
+    icon: Atom,
+    year: 2026,
+    desc: 'Started learning React and built my first React project, a CGPA Calculator.',
+  },
+  {
+    icon: Palette,
+    year: 2026,
+    desc: 'Learned Tailwind CSS and began building more polished, responsive interfaces.',
+  },
+  {
+    icon: Layers,
+    year: 2026,
+    desc: 'Started learning Next.js and TypeScript while building Sellora.',
+  },
+  {
+    icon: Store,
+    year: 2026,
+    desc: 'Built Sellora, my first full-stack multi-tenant web app with authentication, storefronts, carts, orders, and analytics.',
+  },
+  {
+    icon: Server,
+    year: 2026,
+    desc: 'Now learning Node.js and Express.js while deepening my understanding of system design and software architecture.',
+  },
+];
 
 export const skills: Technology[] = [
   {
@@ -84,12 +122,22 @@ export const projects: Project[] = [
     name: 'Sellora', 
     desc: 'A full-stack e-commerce platform that enables businesses to manage products, inventory, orders, and analytics through a modern, intuitive dashboard.', 
     technology: [
-      'React', 'NextJS', 'TailwindCSS', 'Supabase'
+      'React.js', 'Next.js', 'TailwindCSS', 'Supabase'
     ],
     LiveUrl: 'https://sellora-project-pi.vercel.app',
     githubUrl: 'https://github.com/abdulganiy-ibrahim',
     status: 'private'
-  }
+  }, {
+    image: '/projectImages/LPMS.png', 
+    name: 'Product management system', 
+    desc: 'A full-stack product management system built with Express and TypeScript, featuring CRUD operations for creating, viewing, updating, and deleting products through a React frontend.', 
+    technology: [
+      'React.js',  'TailwindCSS', 'Typescript', 'Express.js'
+    ],
+    LiveUrl: 'https://product-management-web-seven.vercel.app/',
+    githubUrl: 'https://github.com/abdulganiy-ibrahim/product-management-system',
+    status: 'public'
+  },
 ]
 
 export const socialLinks: SocialLink[] = [

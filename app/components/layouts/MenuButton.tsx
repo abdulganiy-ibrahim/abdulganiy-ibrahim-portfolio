@@ -42,7 +42,7 @@ export default function MenuButton() {
                   Links.map((link) => (
                     <Link 
                       key={link.href} href={link.href}
-                      className="flex items-center justify-between bg-primary text-white font-semibold rounded-lg p-2 hover:bg-primary/70 transition-all duration-300"
+                      className="flex items-center justify-between border border-primary/40 text-primary rounded-lg p-2 hover:bg-primary hover:text-white transition-all duration-300"
                     >
                       {link.label}
                       <ArrowRight className="h-4 w-4" />

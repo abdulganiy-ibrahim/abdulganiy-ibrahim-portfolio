@@ -59,7 +59,7 @@ export default function Contact() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        className="mx-auto max-w-6xl overflow-hidden rounded-3xl border border-border bg-linear-to-br from-primary/5 via-(--color-surface) to-(--color-surface) shadow-sm"
+        className="mx-auto max-w-8xl overflow-hidden rounded-3xl border border-border bg-linear-to-br from-primary/5 via-(--color-surface) to-(--color-surface) shadow-sm"
       >
         <div className="grid grid-cols-1 lg:grid-cols-5">
           <motion.div variants={item} className="lg:col-span-2 lg:border-r lg:border-border">

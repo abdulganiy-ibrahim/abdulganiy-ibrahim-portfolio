@@ -30,13 +30,13 @@ export default function Hero() {
       variants={container}
       initial="hidden"
       animate="show"
-      className="mt-10 p-2 flex flex-col lg:flex-row items-start justify-between gap-10"
+      className="mt-10 flex flex-col lg:flex-row items-start justify-between gap-10"
     >
       <motion.div variants={item} className="lg:basis-3/5">
         <HeroText />
       </motion.div>
 
-      <motion.div variants={item} className="lg:basis-2/5 flex justify-center md:mx-auto">
+      <motion.div variants={item} className="lg:basis-2/5 flex justify-end">
         <HeroImage />
       </motion.div>
 
