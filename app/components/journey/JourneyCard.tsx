@@ -4,12 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { journeyCardText as cardText } from "@/lib/data";
 
-const MARQUEE_DURATION = 30; // seconds for one full loop — increase to slow it down
+const MARQUEE_DURATION = 30;
 
 export default function JourneyCard() {
   const [isPaused, setIsPaused] = useState(false);
 
-  // Duplicated so the track can loop from -50% back to 0% seamlessly
   const loopedCards = [...cardText, ...cardText];
 
   return (
