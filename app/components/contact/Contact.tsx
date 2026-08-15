@@ -53,7 +53,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="px-4 py-16 sm:py-20">
+    <section
+      id="contact" 
+      className="px-4 py-16 sm:py-20"
+    >
       <motion.div
         variants={container}
         initial="hidden"
