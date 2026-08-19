@@ -118,7 +118,7 @@ export const skills: Technology[] = [
 
 export const projects: Project[] = [
   {
-    image: '/projectImages/sellora-dashboard.png', 
+    image: '/projectImages/sellora-dash-sreenshot.webp', 
     name: 'Sellora', 
     desc: 'A full-stack e-commerce platform that enables businesses to manage products, inventory, orders, and analytics through a modern, intuitive dashboard.', 
     technology: [

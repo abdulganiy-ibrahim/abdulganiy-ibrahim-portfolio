@@ -12,7 +12,9 @@ export default function ProjectCard() {
             key={p.name}
             className="group relative flex flex-col gap-4 rounded-2xl border border-border/60 bg-background-card p-3 shadow-soft transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-emerald"
           >
-            <div className="relative flex items-center justify-center overflow-hidden rounded-xl">
+            <div
+              className="relative flex items-center justify-center overflow-hidden rounded-xl"
+            >
               <div className="w-full transition-transform duration-700 ease-out group-hover:scale-110">
                 <ProjectCardImage imageUrl={p.image} />
               </div>

@@ -14,11 +14,10 @@ export default function HeroCta() {
       </Link>
 
       <Link
-        href='/Abdulganiy-Ibrahim-CV.pdf'
-        download='Abdulganiy-Ibrahim-CV.pdf'
+        href='/Abdulganiy Ibrahim CV.pdf'
         className='inline-flex items-center gap-4 bg-background text-primary border border-primary rounded-2xl py-2 px-3 hover:bg-primary hover:text-white hover:shadow-emerald transition-all duration-300'
       >
-        Download CV
+        View CV
         <Download className='h-4 w-4' />
       </Link>
     </div>

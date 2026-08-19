@@ -7,14 +7,16 @@ export default function Home() {
     <div className="min-h-screen p-2">
 
       <Header />
-
-      <Hero />
-      <About />
-      <Journey />
-      <Technologies />
-      <Projects />
-      <Contact />
-      <Footer />
+      
+      <main className='pt-24'>
+        <Hero />
+        <About />
+        <Journey />
+        <Technologies />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
     </div>
   );
 }

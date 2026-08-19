@@ -48,7 +48,7 @@ export default function JourneyCard() {
         <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-16 bg-linear-to-l from-background to-transparent" />
 
         <motion.div
-          className="relative flex w-max items-start gap-4 px-1 lg:gap-6"
+          className="relative flex w-max items-stretch gap-4 px-1 lg:gap-6"
           animate={{ x: isPaused ? undefined : ["0%", "-50%"] }}
           transition={{
             duration: MARQUEE_DURATION,
@@ -62,11 +62,11 @@ export default function JourneyCard() {
             loopedCards.map((text, i) => (
               <div
                 key={`${text.year}-${i}`}
-                className="relative z-10 flex w-56 shrink-0 flex-col items-center text-center lg:w-64"
+                className="relative z-10 flex w-56 shrink-0 flex-col items-center text-center lg:w-64 mb-2"
               >
                 <div className="mb-4 h-4 w-4 shrink-0 rounded-full border-2 border-primary bg-background" />
 
-                <div className="w-full rounded-2xl shadow-soft p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-emerald">
+                <div className="w-full h-full rounded-2xl shadow-soft p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-emerald">
                   <div className="mx-auto inline-flex items-center justify-center rounded-xl bg-primary/20 p-2 transition-transform duration-300">
                     <text.icon className="text-primary" />
                   </div>
