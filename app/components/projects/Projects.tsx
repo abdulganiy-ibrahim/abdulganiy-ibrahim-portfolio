@@ -33,7 +33,7 @@ export default function Projects() {
       className="mt-10"
     >
       <motion.div variants={item} className="flex flex-col items-center justify-center">
-        <h1 className="text-sm text-primary font-semibold">Featured Projects</h1>
+        <h1 className="text-sm text-primary font-semibold">Recent Work</h1>
         <p className="text-base font-semibold">Things I've built</p>
       </motion.div>
 

@@ -8,7 +8,7 @@ export default function Home() {
 
       <Header />
       
-      <main className='pt-24'>
+      <main>
         <Hero />
         <About />
         <Journey />

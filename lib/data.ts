@@ -78,7 +78,7 @@ export const journeyCardText: JourneyCard[] = [
   {
     icon: Server,
     year: 2026,
-    desc: 'Now learning Node.js and Express.js while deepening my understanding of system design and software architecture.',
+    desc: 'Building backend projects with Node.js and Express.js and deepening my understanding of system design and software architecture.',
   },
 ];
 
@@ -120,7 +120,7 @@ export const projects: Project[] = [
   {
     image: '/projectImages/sellora-dash-sreenshot.webp', 
     name: 'Sellora', 
-    desc: 'A full-stack e-commerce platform that enables businesses to manage products, inventory, orders, and analytics through a modern, intuitive dashboard.', 
+    desc: 'A full-stack platform that allows businesses to create their own storefront, manage products and inventory, process orders, and monitor sales through a dashboard. Built with: Next.js, TypeScript, Supabase, Tailwind CSS. Highlights: Authentication · Multi-tenancy · Storefronts · Order management · Analytics · Role-based access', 
     technology: [
       'React.js', 'Next.js', 'TailwindCSS', 'Supabase'
     ],

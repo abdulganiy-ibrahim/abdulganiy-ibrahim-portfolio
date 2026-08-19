@@ -32,7 +32,7 @@ export interface Project {
   technology: string[];
   LiveUrl: string;
   githubUrl: string;
-  status: 'private' | 'public' | 'ongoing';
+  status: 'private' | 'public';
 }
 
 export interface SocialLink {

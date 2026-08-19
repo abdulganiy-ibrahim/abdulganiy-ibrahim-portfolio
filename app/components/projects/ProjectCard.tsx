@@ -42,7 +42,7 @@ export default function ProjectCard() {
 
             <div className="mt-auto flex items-center justify-between gap-2 border-t border-border/60 pt-3">
               <LiveBtn LinkUrl={p.LiveUrl} />
-              <GithubBtn LinkUrl={p.githubUrl} />
+              <GithubBtn LinkUrl={p.githubUrl} status={p.status}/>
             </div>
 
           </div>
