@@ -44,21 +44,21 @@ export default function HeroImage() {
         <p className="pl-6">
           focus:
           <span className="text-primary">
-            {" "} "Full Stack Development"
+            {" "} "Backend Engineering & System Design"
           </span>,
         </p>
 
         <p className="pl-6">
           passion:
           <span className="text-primary">
-            {" "} "Building products that solve real problems"
+            {" "} "Building Systems that don't fall apart under real use"
           </span>,
         </p>
 
         <p className="pl-6">
           goal:
           <span className="text-primary">
-            {" "} "To build tech that makes impact"
+            {" "} "To own the hard problems, not just ship features"
           </span>,
         </p>
 

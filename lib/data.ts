@@ -41,41 +41,49 @@ export const aboutCardText: AboutCardText[] = [
 
 export const journeyCardText: JourneyCard[] = [
   {
+    id: '1',
     icon: CodeXml,
     year: 2024,
     desc: 'Started learning HTML & CSS and built small layouts and book covers.',
   },
   {
+    id: '2',
     icon: Globe,
     year: 2025,
     desc: 'Completed HTML & CSS and started learning JavaScript.',
   },
   {
+    id: '3',
     icon: Smartphone,
     year: 2025,
     desc: 'Built my first real project, a phone store with search, cart, and WhatsApp ordering.',
   },
   {
+    id: '4',
     icon: Atom,
     year: 2026,
     desc: 'Started learning React and built my first React project, a CGPA Calculator.',
   },
   {
+    id: '5',
     icon: Palette,
     year: 2026,
     desc: 'Learned Tailwind CSS and began building more polished, responsive interfaces.',
   },
   {
+    id: '6',
     icon: Layers,
     year: 2026,
     desc: 'Started learning Next.js and TypeScript while building Sellora.',
   },
   {
+    id: '7',
     icon: Store,
     year: 2026,
     desc: 'Built Sellora, my first full-stack multi-tenant web app with authentication, storefronts, carts, orders, and analytics.',
   },
   {
+    id: '8',
     icon: Server,
     year: 2026,
     desc: 'Building backend projects with Node.js and Express.js and deepening my understanding of system design and software architecture.',

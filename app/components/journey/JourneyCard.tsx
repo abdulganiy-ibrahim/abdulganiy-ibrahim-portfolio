@@ -61,7 +61,7 @@ export default function JourneyCard() {
           {
             loopedCards.map((text, i) => (
               <div
-                key={`${text.year}-${i}`}
+                key={`${text.id}-${i}`}
                 className="relative z-10 flex w-56 shrink-0 flex-col items-center text-center lg:w-64 mb-2"
               >
                 <div className="mb-4 h-4 w-4 shrink-0 rounded-full border-2 border-primary bg-background" />

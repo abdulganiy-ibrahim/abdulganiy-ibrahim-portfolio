@@ -11,7 +11,7 @@ type ProjectModalProps = {
 
 export default function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} className="p-2">
       <div className="flex flex-col max-h-[85vh]">
         {/* Image */}
         <div className="relative shrink-0 rounded-xl overflow-hidden bg-background border border-border/60">
@@ -27,8 +27,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
           )}
         </div>
 
-        {/* Scrollable content */}
-        <div className="mt-5 overflow-y-auto pr-1">
+        <div className="mt-5 pr-1">
           <h2 className="text-xl font-bold text-primary">
             {project.name}
           </h2>
@@ -45,7 +44,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
         </div>
 
         {/* Actions */}
-        <div className="mt-5 pt-4 border-t border-border/60 shrink-0 flex items-center justify-between gap-2">
+        <div className="mt-5 mb-5 pt-4 border-t border-border/60 shrink-0 flex items-center justify-between gap-2">
           <LiveBtn LinkUrl={project.LiveUrl} />
           <GithubBtn LinkUrl={project.githubUrl} status={project.status} />
         </div>

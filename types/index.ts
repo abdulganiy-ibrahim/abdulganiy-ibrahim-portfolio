@@ -13,6 +13,7 @@ export interface AboutCardText {
 }
 
 export interface JourneyCard {
+  id: string;
   icon: LucideIcon;
   year: number;
   desc: string;

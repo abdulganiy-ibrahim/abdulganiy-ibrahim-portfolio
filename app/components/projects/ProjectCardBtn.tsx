@@ -36,7 +36,7 @@ export const GithubBtn = ({ LinkUrl, status }: GithubBtnProps) => {
         className='flex cursor-not-allowed items-center justify-center gap-2 rounded-xl border border-primary/40 bg-primary/30 py-2 px-4 text-white/60'
       >
         <LockIcon className='h-4 w-4' />
-        Private
+        Repo: Private
       </button>
     )
   }
