@@ -1,16 +1,35 @@
+'use client';
+
+import { useState} from 'react';
 import { projects } from '@/lib/data';
+import { Project } from '@/types';
 import ProjectCardImage from "./ProjectCardimage";
 import TechnologyBadge from "./TechnologyBadge";
 import { LiveBtn, GithubBtn } from './ProjectCardBtn';
+import ProjectModal from './ProjectModal';
 
 export default function ProjectCard() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setSelectedProject(null);
+    setIsModalOpen(false);
+  }
+
   return (
     <>
       {
         projects.map((p) => (
           <div
             key={p.name}
-            className="group relative flex flex-col gap-4 rounded-2xl border border-border/60 bg-background-card p-3 shadow-soft transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-emerald"
+            onClick={() => openModal(p)}
+            className="group relative flex flex-col gap-4 rounded-2xl border border-border/60 bg-background-card p-3 shadow-soft cursor-pointer transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-emerald"
           >
             <div
               className="relative flex items-center justify-center overflow-hidden rounded-xl"
@@ -48,6 +67,9 @@ export default function ProjectCard() {
           </div>
         ))
       }
+      {selectedProject && (
+        <ProjectModal project={selectedProject} isOpen={isModalOpen} onClose={closeModal} />
+      )}
     </>
   )
 }

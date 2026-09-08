@@ -6,10 +6,12 @@ export default function AboutText() {
       <p className="text-sm text-primary font-semibold">About me</p>
 
       <div className="space-y-4 mt-2">
-        <h1 className="text-4xl xl:text-5xl font-bold font-heading">I Build With Understanding, Not Assumptions</h1>
+        <h1 className="text-4xl xl:text-5xl font-bold font-heading">I Build Backends I'd Trust With Real Data</h1>
 
         <p className="text-sm xl:text-lg text-gray-600">
-          I believe great software starts with understanding, not just implementation. When I learn something new, I'm not satisfied until I know why it works, how it fits into the bigger picture, and the trade-offs behind every decision. Whether I'm designing an interface, structuring a backend, or working with databases, I approach every project with curiosity and intention. For me, writing code isn't just about solving today's problem, it's about building knowledge that helps me create better software tomorrow.
+          I got into development through the frontend: HTML, CSS, React. But what pulled me in deeper was the backend: how data gets structured, who's allowed to touch what, and why one schema decision saves you six months later. On Sellora, that meant designing multi-tenancy from the ground up rather than bolting it on, so every store, product, and order stayed scoped correctly and one business's data never leaked into another's.
+          <br></br>
+          I'm still early in my career, but I don't treat that as an excuse to skip the hard parts. I'd rather spend an extra day getting authorization right than ship something that "works" until it doesn't.
         </p>
       </div>
 

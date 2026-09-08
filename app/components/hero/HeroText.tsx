@@ -12,10 +12,10 @@ export default function HeroText() {
 
       <div>
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold font-heading">
-          Building scalable web applications with clean code and & <span className="text-primary">great user experiences</span>
+          Full stack developer building backend systems <span className="text-primary">that actually hold up</span>
         </h1>
         <p className="mt-4 text-sm xl:text-lg text-gray-600">
-          I don't build software just to make it work. I build to understand why it works. Every project deepens my understanding of architecture, APIs, databases, and thoughtful user experiences.
+          I care less about whether the code runs and more about whether it survives contact with real users, proper data isolation, sane authorization, structure that doesn't collapse when a project grows. Every app I build is a chance to think like the systems underneath it.
         </p>
       </div>
 

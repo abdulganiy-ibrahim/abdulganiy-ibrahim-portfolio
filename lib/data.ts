@@ -27,15 +27,15 @@ export const aboutCardText: AboutCardText[] = [
   }, {
     icon: Blocks,
     title: 'Build Intentionally',
-    desc: 'Architecture over shortcuts'
+    desc: 'Structure over shortcuts'
 }, {
     icon: ScanSearch,
-    title: 'Craft Experiences',
-    desc: 'Details makes difference'
+    title: 'Secure by default',
+    desc: "Access control isn't an afterthought"
 }, {
     icon: BookOpen,
     title: 'Keep growing',
-    desc: 'Learning never stop'
+    desc: 'Every project teaches the next one.'
   }
 ]
 
@@ -118,9 +118,10 @@ export const skills: Technology[] = [
 
 export const projects: Project[] = [
   {
+    id: '1',
     image: '/projectImages/sellora-dash-sreenshot.webp', 
     name: 'Sellora', 
-    desc: 'A full-stack platform that allows businesses to create their own storefront, manage products and inventory, process orders, and monitor sales through a dashboard. Built with: Next.js, TypeScript, Supabase, Tailwind CSS. Highlights: Authentication · Multi-tenancy · Storefronts · Order management · Analytics · Role-based access', 
+    desc: "A multi-tenant storefront platform where each business gets its own store, products, orders, and sales dashboard, fully isolated from every other tenant on the platform. Every store is tied to its owner via userId, and every dependent table (products, orders, settings, sales) is scoped to that store's storeId. I enforced this isolation at the database level with Row-Level Security policies on each table, so tenant separation doesn't rely on application code getting it right every time; the database guarantees it.", 
     technology: [
       'React.js', 'Next.js', 'TailwindCSS', 'Supabase'
     ],
@@ -128,11 +129,12 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/abdulganiy-ibrahim',
     status: 'private'
   }, {
+    id: '2',
     image: '/projectImages/LPMS.png', 
     name: 'Product management system', 
-    desc: 'A full-stack product management system built with Express and TypeScript, featuring CRUD operations for creating, viewing, updating, and deleting products through a React frontend.', 
+    desc: "A straightforward CRUD app for managing product inventory: create, edit, delete, and view, built with an Express/PostgreSQL backend and a React frontend. This was my first backend project outside a tutorial, and the real value was learning how to structure an Express codebase (routes, controllers, database layer) instead of dumping logic into one file. It's the project where backend development stopped being abstract to me.", 
     technology: [
-      'React.js',  'TailwindCSS', 'Typescript', 'Express.js'
+      'React.js',  'TailwindCSS', 'Typescript', 'Express.js', 'PostgreSQL'
     ],
     LiveUrl: 'https://product-management-web-seven.vercel.app/',
     githubUrl: 'https://github.com/abdulganiy-ibrahim/product-management-system',

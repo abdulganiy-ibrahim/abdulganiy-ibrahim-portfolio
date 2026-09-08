@@ -50,6 +50,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background: var(--color-background);
   font-family: var(--font-body);
