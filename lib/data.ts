@@ -134,8 +134,8 @@ export const projects: Project[] = [
       'React.js', 'Next.js', 'TailwindCSS', 'Supabase'
     ],
     LiveUrl: 'https://sellora-project-pi.vercel.app',
-    githubUrl: 'https://github.com/abdulganiy-ibrahim',
-    status: 'private'
+    githubUrl: 'https://github.com/abdulganiy-ibrahim/sellora-project',
+    status: 'public'
   }, {
     id: '2',
     image: '/projectImages/LPMS.png', 
