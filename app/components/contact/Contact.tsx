@@ -28,28 +28,33 @@ const item: Variants = {
 export default function Contact() {
 
   const handleSubmit = async (values: ContactFormValues) => {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        access_key: process.env.dataNEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
-        name: values.name,
-        email: values.email,
-        subject: values.subject,
-        message: values.message,
-      }),
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: values.name,
+          email: values.email,
+          subject: values.subject,
+          message: values.message,
+        }),
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (!result.success) {
-      throw new Error(result.message ?? "Failed to send message");
+      if (!result.success) {
+        throw new Error(result.message);
+      }
+
+      toast.success("Message sent! I'll get back to you soon.");
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast.error("Failed to send message. Please try again later.");
     }
-
-    toast.success("Message sent! I'll get back to you soon.");
   };
 
   return (

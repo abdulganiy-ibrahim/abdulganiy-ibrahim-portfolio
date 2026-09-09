@@ -147,7 +147,18 @@ export const projects: Project[] = [
     LiveUrl: 'https://product-management-web-seven.vercel.app/',
     githubUrl: 'https://github.com/abdulganiy-ibrahim/product-management-system',
     status: 'public'
-  },
+  }, {
+    id: '3',
+    image: '/projectImages/my-portfolio.png', 
+    name: 'Portfolio: Personal website', 
+    desc: "Designed and built this site's interface myself, including a custom infinite-scroll timeline with a separate mobile layout, modal-based project views, and animations built with Framer Motion, without relying on a component library.", 
+    technology: [
+      'Next.js', 'Typescript', 'TailwindCSS', 'Framer Motion'
+    ],
+    LiveUrl: 'https://abdulganiy-ibrahim-dev.vercel.app/',
+    githubUrl: 'https://github.com/abdulganiy-ibrahim/abdulganiy-ibrahim-portfolio',
+    status: 'public'
+  }, 
 ]
 
 export const socialLinks: SocialLink[] = [
