@@ -36,13 +36,13 @@ export const projects: Project[] = [
     status: 'public'
   }, {
     id: '4',
-    image: '/projectImages/auth-system.png', // replace with your screenshot or a simple graphic
+    image: '/projectImages/auth-system.png',
     name: 'Authentication system',
     desc: "A secure sign up and login system that any app can use to know who its users are. People create an account, sign in, and stay signed in safely. Passwords are never saved in a readable form, different users get access to different things, and repeated wrong guesses are blocked so nobody can break into an account by trial and error. This isn't live online right now because hosting it has a cost, but the full source code is open on GitHub for anyone who wants to look inside.",
     technology: [
       'Node.js', 'Express.js', 'JWT'
     ],
-    githubUrl: 'https://github.com/abdulganiy-ibrahim/REPO-NAME',
+    githubUrl: 'https://github.com/abdulganiy-ibrahim/express-auth-system',
     status: 'public'
   }
 ]
