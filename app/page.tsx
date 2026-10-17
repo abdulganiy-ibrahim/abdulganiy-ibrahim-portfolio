@@ -1,5 +1,5 @@
 import { 
-  Header, Hero, About, Journey, Technologies, Projects, Contact, Footer 
+  Header, Hero, About, Journey, Technologies, Experiences, Projects, Contact, Footer 
 } from './components/sections'
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
       <About />
       <Journey />
       <Technologies />
+      <Experiences />
       <Projects />
       <Contact />
       <Footer />
