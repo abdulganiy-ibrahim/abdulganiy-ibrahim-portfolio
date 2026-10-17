@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     role: "Full Stack Developer",
     company: "Sellora",
     type: "Personal Project",
-    period: "Month 2026 to Present",
+    period: "March 2026 to July 2026",
     summary:
       "A multi tenant e-commerce storefront platform where each vendor gets their own store front and dashboard. I built it full stack and own the data security, the dashboards and the vendor tooling.",
     highlights: [
@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
     role: "Backend Developer",
     company: "Authentication System",
     type: "Personal Project",
-    period: "Month 2026",
+    period: "August 2026 to September 2026",
     summary:
       "An end to end authentication system built from scratch with Node.js and Express.js to understand how secure sign in works beyond using a ready made service.",
     highlights: [
