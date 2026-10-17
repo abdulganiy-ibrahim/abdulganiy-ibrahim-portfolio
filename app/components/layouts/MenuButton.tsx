@@ -4,7 +4,7 @@ import { MenuIcon, X, ArrowRight } from 'lucide-react';
 import { Button } from '../ui';
 import { useState } from 'react';
 import { BrandLogo, BrandName } from '../brand';
-import { navLinks as Links } from '@/lib/data';
+import { navLinks as Links } from '@/lib/data/navLink';
 import Link from 'next/link';
 
 export default function MenuButton() {

@@ -1,5 +1,5 @@
 import { 
-  NavLink, AboutCardText, JourneyCard, Technology, Project, SocialLink
+  NavLink, AboutCardText, JourneyCard, Technology, SocialLink
 } from '@/types';
 import {
   Brain, Blocks, ScanSearch, BookOpen, CodeXml, Globe, Mail, Smartphone, Atom, Palette, Layers, Store, Server
@@ -8,16 +8,6 @@ import {
   SiHtml5, SiCss, SiJavascript, SiReact, SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss, SiNodedotjs, SiExpress, SiGit, SiGithub, SiPostman, SiVercel, SiSupabase
 } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa';
-
-
-export const navLinks: NavLink[] = [
-  {href: '#home', label: 'Home'},
-  {href: '#about', label: 'About'},
-  {href: '#journey', label: 'Journey'},
-  {href: '#technologies', label: 'Skills'},
-  {href: '#projects', label: 'Projects'},
-  {href: '#contact', label: 'Contact'},
-]
 
 export const aboutCardText: AboutCardText[] = [
   {

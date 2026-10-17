@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { navLinks as Links } from '@/lib/data';
+import { navLinks as Links } from '@/lib/data/navLink';
 
 export default function NavLink() {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
