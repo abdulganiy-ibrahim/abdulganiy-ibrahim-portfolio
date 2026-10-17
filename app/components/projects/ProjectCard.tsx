@@ -1,7 +1,7 @@
 'use client';
 
 import { useState} from 'react';
-import { projects } from '@/lib/data';
+import { projects } from '@/lib/data/project';
 import { Project } from '@/types';
 import ProjectCardImage from "./ProjectCardimage";
 import TechnologyBadge from "./TechnologyBadge";

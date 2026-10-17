@@ -3,14 +3,29 @@ import { ArrowUpRight, LockIcon } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
 
 type UrlProps = {
-  LinkUrl: string
-}
+  LinkUrl?: string;
+};
 
 type GithubBtnProps = UrlProps & {
   status: "public" | "private";
 };
 
 export const LiveBtn = ({ LinkUrl }: UrlProps) => {
+  // No URL yet: render a disabled button instead of a broken link
+  if (!LinkUrl) {
+    return (
+      <button
+        type="button"
+        disabled
+        title="Live demo is not available yet"
+        className='flex cursor-not-allowed items-center justify-center gap-2 rounded-xl border border-primary/40 bg-background py-2 px-4 text-primary/40'
+      >
+        Live Demo
+        <ArrowUpRight className='h-4 w-4' />
+      </button>
+    );
+  }
+
   return (
     <Link
       href={LinkUrl}
@@ -18,16 +33,15 @@ export const LiveBtn = ({ LinkUrl }: UrlProps) => {
       rel="noopener noreferrer"
       className='flex items-center justify-center gap-2 py-2 px-4 rounded-xl border border-primary bg-background text-primary hover:bg-primary hover:text-white transition-all duration-300'
     >
-      Live Demo 
+      Live Demo
       <ArrowUpRight className='h-4 w-4' />
     </Link>
-  )
-}
+  );
+};
 
 export const GithubBtn = ({ LinkUrl, status }: GithubBtnProps) => {
-  const isPrivate = status === "private";
-
-  if (isPrivate) {
+  // Private repo: always disabled, with its own label
+  if (status === "private") {
     return (
       <button
         type="button"
@@ -38,7 +52,22 @@ export const GithubBtn = ({ LinkUrl, status }: GithubBtnProps) => {
         <LockIcon className='h-4 w-4' />
         Repo: Private
       </button>
-    )
+    );
+  }
+
+  // Public repo but no URL provided: disabled, same look as the private state
+  if (!LinkUrl) {
+    return (
+      <button
+        type="button"
+        disabled
+        title="Repository link is not available yet"
+        className='flex cursor-not-allowed items-center justify-center gap-2 rounded-xl border border-primary/40 bg-primary/30 py-2 px-4 text-white/60'
+      >
+        <SiGithub className='h-4 w-4' />
+        Github
+      </button>
+    );
   }
 
   return (
@@ -51,5 +80,5 @@ export const GithubBtn = ({ LinkUrl, status }: GithubBtnProps) => {
       <SiGithub className='h-4 w-4' />
       Github
     </Link>
-  )
-}
+  );
+};

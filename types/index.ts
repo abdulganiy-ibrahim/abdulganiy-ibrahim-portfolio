@@ -32,7 +32,7 @@ export interface Project {
   name: string;
   desc: string;
   technology: string[];
-  LiveUrl: string;
+  LiveUrl?: string;
   githubUrl: string;
   status: 'private' | 'public';
 }

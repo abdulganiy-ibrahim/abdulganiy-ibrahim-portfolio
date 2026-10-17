@@ -124,43 +124,6 @@ export const skills: Technology[] = [
   }
 ]
 
-export const projects: Project[] = [
-  {
-    id: '1',
-    image: '/projectImages/sellora-dash-sreenshot.webp', 
-    name: 'Sellora', 
-    desc: "A multi-tenant storefront platform where each business gets its own store, products, orders, and sales dashboard, fully isolated from every other tenant on the platform. Every store is tied to its owner via userId, and every dependent table (products, orders, settings, sales) is scoped to that store's storeId. I enforced this isolation at the database level with Row-Level Security policies on each table, so tenant separation doesn't rely on application code getting it right every time; the database guarantees it.", 
-    technology: [
-      'React.js', 'Next.js', 'TailwindCSS', 'Supabase'
-    ],
-    LiveUrl: 'https://sellora-project-pi.vercel.app',
-    githubUrl: 'https://github.com/abdulganiy-ibrahim/sellora-project',
-    status: 'public'
-  }, {
-    id: '2',
-    image: '/projectImages/LPMS.png', 
-    name: 'Product management system', 
-    desc: "A straightforward CRUD app for managing product inventory: create, edit, delete, and view, built with an Express/PostgreSQL backend and a React frontend. This was my first backend project outside a tutorial, and the real value was learning how to structure an Express codebase (routes, controllers, database layer) instead of dumping logic into one file. It's the project where backend development stopped being abstract to me.", 
-    technology: [
-      'React.js',  'TailwindCSS', 'Typescript', 'Express.js', 'PostgreSQL'
-    ],
-    LiveUrl: 'https://product-management-web-seven.vercel.app/',
-    githubUrl: 'https://github.com/abdulganiy-ibrahim/product-management-system',
-    status: 'public'
-  }, {
-    id: '3',
-    image: '/projectImages/my-portfolio.png', 
-    name: 'Portfolio: Personal website', 
-    desc: "Designed and built this site's interface myself, including a custom infinite-scroll timeline with a separate mobile layout, modal-based project views, and animations built with Framer Motion, without relying on a component library.", 
-    technology: [
-      'Next.js', 'Typescript', 'TailwindCSS', 'Framer Motion'
-    ],
-    LiveUrl: 'https://abdulganiy-ibrahim-dev.vercel.app/',
-    githubUrl: 'https://github.com/abdulganiy-ibrahim/abdulganiy-ibrahim-portfolio',
-    status: 'public'
-  }, 
-]
-
 export const socialLinks: SocialLink[] = [
   { icon: SiGithub, href: "https://github.com/abdulganiy-ibrahim", label: "GitHub", color: "181717" },
   { icon: FaLinkedin, href: "https://linkedin.com/in/abdulganiy-ibrahim-04339840a", label: "LinkedIn" },
